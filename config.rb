@@ -1,6 +1,7 @@
 require 'stringex'
 require 'time'
 require 'active_support/all'
+require './creds'
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
@@ -54,10 +55,10 @@ activate :directory_indexes
 proxy "/arsiv/index.html", "/pages/archive.html"
 proxy "/hakkinda/index.html", "/pages/about.html"
 
-# activate :deploy do |deploy|
-#   deploy.build_before = true
-#   deploy.method   = :rsync
-#   deploy.user     = "SSH_USER"
-#   deploy.host     = "SSH_HOST"
-#   deploy.path     = "/path/to/foler/example.com"
-# end
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method   = :rsync
+  deploy.user     = DEPLOY_USER
+  deploy.host     = DEPLOY_HOST
+  deploy.path     = DEPLOY_PATH
+end
