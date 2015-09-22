@@ -20,6 +20,12 @@ rake -T
 rake # default => Ön izleme sunucusu
 ```
 
+## Eksikler
+
+* Yeni post için `rake` task.
+* Nginx konfigürasyonu
+* Front-matter değişkenlerini ve konfigürasyonu açıklacak yazı
+
 ## Katkı Yapın
 
 1. `fork` yapın ( [tıkla](https://github.com/gelistiriciyiz-biz/git.gelistiriciyiz.biz/fork) )
