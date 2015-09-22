@@ -1,0 +1,22 @@
+site:
+  production_url: "http://git.gelistiriciyiz.biz"
+  title: "Git Püf Noktaları"
+  subtitle: "Git ile ilgili Türkçe püf noktaları"
+  tag_line: "Gündelik Hayatta GIT"
+  description: "Git ile ilgili Türkçe püf noktaları"
+  # logo: "logo.png"
+  cover_image: "cover.jpg"
+  social:
+    twitter: "GiT_Tips_TR"
+    # facebook: ""
+  # company:
+  #   name: "COMPANY_NAME"
+  #   url: "http://company_url"
+  # product:
+  #   name: "PRODUCT_NAME"
+  #   url: "http://product_url"
+  main_author:
+    name: "Uğur Özyılmazel"
+    email: "ugurozyilmazel@gmail.com"
+    link: "http://ugur.ozyilmazel.com"
+    bio: "Yazılım Geliştiricisi"

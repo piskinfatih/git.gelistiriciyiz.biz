@@ -1,0 +1,8 @@
+<section class="pagination">
+    <% if prev_page %>
+        <%= link_to "‹ #{t('messages.previous_posts')}", prev_page, :class => "btn btn-outline" %>
+    <% end %>
+    <% if next_page %>
+        <%= link_to "#{t('messages.next_posts')} ›", next_page, :class => "btn btn-outline" %>
+    <% end %>
+</section>
