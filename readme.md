@@ -12,7 +12,7 @@ değişkenlerini tanımlayın.
 
 * Ruby 2.2.2
 
-Repo’u clone ettikten sonra;
+Repo’yu clone ettikten sonra;
 
 ```bash
 bundle install --path vendor/bundle
