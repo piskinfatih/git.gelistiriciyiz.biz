@@ -1,5 +1,11 @@
 # git.gelistiriciyiz.biz
 
+[http://git.gelistiriciyiz.biz][1] sitesinin
+kaynak kodu. [webBox.io’nun][2] [Middleman][3] template / statik
+sayfa üreticisi çatısı üzerine üzerine [jekyll-incorporated][4]
+temasının modifiyesi ile yapılmıştır.
+
+
 ## Kurulum
 
 * Ruby 2.2.2 (*En az 2 olsa yeterli*)
@@ -74,9 +80,10 @@ Eğer yazı içinde tıklayınca büyüyecek bir resim koymak isterseniz;
 
 Yeni post yapmak için `rake post` yapmanız yeterli. (wip)
 
+
 ## Deployment
 
-[Middleman](https://middlemanapp.com/) pek çok farklı özellikle geliyor.
+[Middleman][3] pek çok farklı özellikle geliyor.
 Ben `:rsync` yöntemini seçtim. Bu işi sağlıklı yapabilmek için, lütfen 
 root’da `creds.rb` dosyasını oluşturun ve;
 
@@ -143,3 +150,9 @@ post’lar için.
 3. Yaptıklarınızı `commit` edin (`git commit -am 'Yeni makale'`)
 4. `branch`’i `push` edin (`git push origin benim-makalem`)
 5. Yeni bir **Pull Request** oluşturun!
+
+
+[1]: http://git.gelistiriciyiz.biz
+[2]: https://github.com/webBoxio/middleman-boilerplate-template
+[3]: https://middlemanapp.com/
+[4]: https://github.com/kippt/jekyll-incorporated

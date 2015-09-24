@@ -9,12 +9,12 @@ site:
   social:
     twitter: "GiT_Tips_TR"
     # facebook: ""
-  # company:
-  #   name: "COMPANY_NAME"
-  #   url: "http://company_url"
-  # product:
-  #   name: "PRODUCT_NAME"
-  #   url: "http://product_url"
+  company:
+    name: "Geliştiriciyiz.biz"
+    url: "http://gelistiriciyiz.biz/"
+  product:
+    name: "GELİŞTİRİCİYİZ.BİZ"
+    url: "http://gelistiriciyiz.biz/"
   main_author:
     name: "Uğur Özyılmazel"
     email: "ugurozyilmazel@gmail.com"
