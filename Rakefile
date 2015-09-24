@@ -3,14 +3,9 @@ require "bundler/setup"
 
 task :default => ["preview"]
 
-desc "Start preview / development server"
+desc "Ön izleme / geliştirme sunucusu"
 task :preview do
   system "middleman"
-end
-
-desc "Run as production (dynamic) server"
-task :production do
-  system "rackup"
 end
 
 desc "Deploy"

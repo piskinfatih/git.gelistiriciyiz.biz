@@ -4,7 +4,7 @@ site:
   subtitle: "Git ile ilgili Türkçe püf noktaları"
   tag_line: "Gündelik Hayatta GIT"
   description: "Git ile ilgili Türkçe püf noktaları"
-  # logo: "logo.png"
+  logo: "logo.png"
   cover_image: "cover.jpg"
   social:
     twitter: "GiT_Tips_TR"
