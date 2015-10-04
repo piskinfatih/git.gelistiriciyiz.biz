@@ -57,6 +57,20 @@ olmalı. İsterseniz dış link de verebilirsiniz:
 
 ## HTML Yardımcılar
 
+**READ_MORE**
+
+Özet kısmı için kullanır. Örnek:
+
+    ---
+    title: "Daha detaylı `git-branch`"
+    date: 2013-01-06 22:03
+    tags: branch
+    ---
+    Local’deki ve Remote’daki yani varolan tüm **branch**'leri göstermek 
+    için;
+    READ_MORE
+    
+
 **zoom resim**
 
 Eğer yazı içinde tıklayınca büyüyecek bir resim koymak isterseniz;
@@ -78,7 +92,10 @@ Eğer yazı içinde tıklayınca büyüyecek bir resim koymak isterseniz;
 
 ## Yeni Post
 
-Yeni post yapmak için `rake post` yapmanız yeterli. (wip)
+Yeni post yapmak için `rake post` yapmanız yeterli.
+
+    rake post["Yeni yazı"] # ya da
+    bundle exec rake post["Yeni yazı"]
 
 
 ## Deployment
@@ -126,12 +143,11 @@ post’lar için.
         bio: "1 SATIR BİO"
 
 
-## Eksikler
-
-* Yeni post için `rake` task.
-
-
 ## Güncellemeler
+
+**2015-10-04**
+
+* `rake post` ile otomatik olarak post oluşturma eklendi.
 
 **2015-09-24**
 
