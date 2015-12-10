@@ -3,12 +3,6 @@ title: .mailmap ile commit istatistiği
 date: Nov 12, 2015 15:53
 tags: log
 subtitle: "git shortlog -sn"
-# published: false
-# author:
-#   name: 
-#   email:
-#   link:
-#   bio:
 ---
 
 Bazen commit eden kişilerin farklı ad ya da e-posta kullandıklarını görürsünüz.
