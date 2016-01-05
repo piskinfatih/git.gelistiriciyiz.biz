@@ -30,6 +30,7 @@ task :post, :title do |t, args|
   output << "# tags: tag1,tag2"
   output << "# subtitle: "
   output << "# published: false"
+  output << "# cover: "
   output << "# author:"
   output << "#   name: "
   output << "#   email:"
