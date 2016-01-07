@@ -15,6 +15,7 @@ end
 
 desc "Deploy"
 task :deploy do
+  system "rm -rf build/"
   system "middleman deploy"
 end
 

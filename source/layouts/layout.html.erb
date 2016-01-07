@@ -45,7 +45,7 @@ end
             </nav>
 
             <% if site[:tag_line] or site[:product] %>
-            <nav class="tagline">
+            <nav class="tagline hidden-xs">
                 <% if site[:tag_line] %><span><%= site[:tag_line] %></span><% end %>
                 <% if site[:product] %><a href="<%= site[:product][:url] %>" class="btn btn-outline"><%= site[:product][:name] %></a><% end %>
             </nav>
