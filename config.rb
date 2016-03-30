@@ -33,6 +33,12 @@ convert_hash = lambda do |h|
 end
 config[:site] = convert_hash[config_data][:site]
 
+begin
+  custom_config = YAML.load(File.read("config_custom.yaml"))
+  custom_config["main_author"].each{|k,v| config[:site][:main_author][k.to_sym] = v}
+rescue Exception => e
+end
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
@@ -43,7 +49,7 @@ activate :blog do |blog|
   blog.paginate = true
   blog.layout = "blog_layout"
   blog.summary_separator = /READ_MORE/
-    blog.summary_length = nil
+  blog.summary_length = nil
   blog.taglink = "etiket/{tag}.html"
   blog.tag_template = "pages/tag.html"
   blog.calendar_template = "pages/calendar.html"
