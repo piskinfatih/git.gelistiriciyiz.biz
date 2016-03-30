@@ -158,6 +158,9 @@ post’lar için.
 * Deployment açıklandı.
 * `config.yaml` açıklandı.
 
+## Lisans
+
+Bu proje MIT lisansıyla lisanslanmıştır.
 
 ## Katkı Yapın
 
