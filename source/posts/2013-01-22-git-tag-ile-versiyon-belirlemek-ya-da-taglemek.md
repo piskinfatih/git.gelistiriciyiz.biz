@@ -3,7 +3,7 @@ title: "`git-tag` ile versiyon belirlemek ya da Tag’lemek"
 date: 2013-01-22 22:50
 tags: tag,rev-parse
 ---
-Revizyonu etiketlemek çok işe yarıyabilir. Belirleyeceğiniz etikete ya da
+Revizyonu etiketlemek çok işe yarayabilir. Belirleyeceğiniz etikete ya da
 versiyona kolay geri dönebilirsiniz. Etiketlemek ya da **tag**’lemek 
 değişik yollarla mümkün.
 READ_MORE
