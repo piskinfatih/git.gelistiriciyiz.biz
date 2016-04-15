@@ -10,7 +10,7 @@ cover: 2016-04-14-en-cok-kullanilan-git-komutlari.jpg
 
 Bağımsız, bireysel çalışan bir geliştirici, diğer geliştiricilerle
 patch değiş tokuşu yapmayacağı için, hele birde tek bir repository’de
-çalışıyorsa en çok kullanacaı komutlar:READ_MORE
+çalışıyorsa en çok kullanacağı komutlar:READ_MORE
 
 1. `git init`
 1. `git log`
