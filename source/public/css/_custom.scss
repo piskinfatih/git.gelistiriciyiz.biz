@@ -52,7 +52,12 @@ article.archive {
   }
   
   h3 {
-//    border-bottom: 2px solid $accent;
     margin-bottom: 2em;
+  }
+  h3.text {
+    span {
+      font-weight: 900;
+      color: $accent;
+    }
   }
 }
