@@ -223,7 +223,7 @@ tr:
     previous_posts: ÖNCEKİLER
     next_posts: SONRAKİLER
     page_title_archive: Arşiv
-    posts_amount: "%{count} kayıt bulunuyor."
+    posts_amount: "<span>%{count}</span> kayıt bulunuyor."
     posts_amount_by_year: "yılında <span>%{count}</span> kayıt bulunuyor."
     click_for_year_title: "%{year} yılı arşivi için tıklayın."
     click_for_year_of_month_title: "%{year} yılı, %{month} ayı arşivi için tıklayın"
