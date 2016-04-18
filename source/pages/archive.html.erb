@@ -1,5 +1,5 @@
 <article class="container archive">
-    <section class="index"><h1><%= t 'messages.page_title_archive' %></h1></section>
+    <section class="index"><h1><%= t 'messages.archive' %></h1></section>
     <% page_articles.group_by {|x| x.date.year}.each do |year, articles_group_by_year| %>
         <section class="index">
             <h2><%= link_to "#{year} &raquo;", blog_year_path(year), :title => t('messages.click_for_year_title', year: year) %> <%= t('messages.posts_amount_by_year', count: articles_group_by_year.count) %></h2>
