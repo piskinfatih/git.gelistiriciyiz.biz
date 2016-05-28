@@ -23,7 +23,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.author { 
         xml.name article_author
       }
-      xml.summary Sanitize.clean(article.summary).strip.gsub("\n", "")
+      xml.summary print_summary(article), "type" => "html"
     end
   end
 end
