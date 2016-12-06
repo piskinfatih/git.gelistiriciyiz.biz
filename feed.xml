@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Git Püf Noktaları</title>
+  <subtitle>Git ile ilgili Türkçe püf noktaları</subtitle>
+  <id>http://git.gelistiriciyiz.biz</id>
+  <link href="http://git.gelistiriciyiz.biz"/>
+  <link href="http://git.gelistiriciyiz.biz/feed.xml" rel="self"/>
+  <updated>2016-04-18T21:17:00+03:00</updated>
+  <author>
+    <name>Uğur Özyılmazel</name>
+  </author>
+  <entry>
+    <title>Tag'in adını değiştirmek</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2016/04/18/tagin-adini-degistirmek/"/>
+    <id>http://git.gelistiriciyiz.biz/2016/04/18/tagin-adini-degistirmek/</id>
+    <published>2016-04-18T21:17:00+03:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Ender Ahmet Yurt</name>
+    </author>
+    <summary type="html">&lt;p&gt;Önceden belirlediğimiz bir tag&amp;#39;in adını değiştirmek istiyorsak,&lt;/p&gt;
+&lt;pre class="highlight shell"&gt;&lt;code&gt;git push origin &amp;lt;old-tag&amp;gt;:&amp;lt;new-tag&amp;gt; :&amp;lt;old-tag&amp;gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git tag -d &amp;lt;old-tag&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;yapamamız yeterli olacaktır.&lt;/p&gt;
+</summary>
+  </entry>
+  <entry>
+    <title>En sık kullanılan komutlar</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2016/04/14/en-sik-kullanilan-komutlar/"/>
+    <id>http://git.gelistiriciyiz.biz/2016/04/14/en-sik-kullanilan-komutlar/</id>
+    <published>2016-04-14T20:46:00+03:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;code&gt;git help everyday&lt;/code&gt; derki;&lt;/p&gt;
+
+&lt;p&gt;Bağımsız, bireysel çalışan bir geliştirici, diğer geliştiricilerle
+patch değiş tokuşu yapmayacağı için, hele birde tek bir repository’de
+çalışıyorsa en çok kullanacağı komutlar:&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Repo altına gitmeden işlem yapmak</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2016/03/03/repo-altina-gitmeden-islem-yapmak/"/>
+    <id>http://git.gelistiriciyiz.biz/2016/03/03/repo-altina-gitmeden-islem-yapmak/</id>
+    <published>2016-03-03T10:24:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;code&gt;git&lt;/code&gt; ile işlem yapmak için artık repository dizini altına gitmenize
+gerek yok.&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>commit'leri squash etmeden birleştirebilirsiniz</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2016/01/05/commitleri-squash-etmeden-birlestirebilirsiniz/"/>
+    <id>http://git.gelistiriciyiz.biz/2016/01/05/commitleri-squash-etmeden-birlestirebilirsiniz/</id>
+    <published>2016-01-05T22:21:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Sık sık &lt;strong&gt;commit&lt;/strong&gt; yapın. Hatta ilk etapta &lt;strong&gt;commit mesajı&lt;/strong&gt;’nı da
+pek fazla kafaya takmayın (???)
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>İlk commit boş olsun</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2015/12/10/ilk-commit-bos-olsun/"/>
+    <id>http://git.gelistiriciyiz.biz/2015/12/10/ilk-commit-bos-olsun/</id>
+    <published>2015-12-10T08:43:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Başlangıç noktamızı işaretlemek herzaman işimize yarayacaktır.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>.mailmap ile commit istatistiği</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2015/11/12/mailmap-ile-commit-istatistigi/"/>
+    <id>http://git.gelistiriciyiz.biz/2015/11/12/mailmap-ile-commit-istatistigi/</id>
+    <published>2015-11-12T15:53:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Bazen commit eden kişilerin farklı ad ya da e-posta kullandıklarını görürsünüz.
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Commit mesajları için template kullanımı</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2015/10/04/commit-mesajlari-icin-template-kullanimi/"/>
+    <id>http://git.gelistiriciyiz.biz/2015/10/04/commit-mesajlari-icin-template-kullanimi/</id>
+    <published>2015-10-04T11:26:00+03:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Daha anlaşılır ve daha işe yarar commit mesajı yazmak ister misiniz?
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Hash ID olmadan checkout yapmak</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2015/01/12/hash-id-olmadan-checkout-yapmak/"/>
+    <id>http://git.gelistiriciyiz.biz/2015/01/12/hash-id-olmadan-checkout-yapmak/</id>
+    <published>2015-01-12T14:15:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Kısa ya da uzun &lt;strong&gt;hash&lt;/strong&gt; kullanmadan, log’da yazan &lt;strong&gt;commit&lt;/strong&gt; mesajları
+içindeki metne göre &lt;code&gt;checkout&lt;/code&gt; yapmak mümkün! Örneğin aşağıdaki gibi
+bir log durumu olsun:
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>Track edilen branch</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2014/11/16/track-edilen-branch/"/>
+    <id>http://git.gelistiriciyiz.biz/2014/11/16/track-edilen-branch/</id>
+    <published>2014-11-16T12:55:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;İçinde bulunduğunuz &lt;code&gt;branch&lt;/code&gt; acaba &lt;code&gt;remote&lt;/code&gt;’da hangi branch’i takip
+ediyor? Yani &lt;strong&gt;track&lt;/strong&gt; dediyor?
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>`git-whatchanged` ile nelerin değiştiğini bulmak</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2013/02/28/git-whatchanged-ile-nelerin-degistigini-bulmak/"/>
+    <id>http://git.gelistiriciyiz.biz/2013/02/28/git-whatchanged-ile-nelerin-degistigini-bulmak/</id>
+    <published>2013-02-28T22:41:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Commit’ler arasında kaybolduğunuzda bir çırpıda nelerin değiştini 
+görmek istemez misiniz?
+&lt;/p&gt;</summary>
+  </entry>
+  <entry>
+    <title>`git-ls-remote` ile uzaktaki tag’leri listelemek</title>
+    <link rel="alternate" href="http://git.gelistiriciyiz.biz/2013/02/28/git-ls-remote-ile-uzaktaki-tagleri-listelemek/"/>
+    <id>http://git.gelistiriciyiz.biz/2013/02/28/git-ls-remote-ile-uzaktaki-tagleri-listelemek/</id>
+    <published>2013-02-28T00:25:00+02:00</published>
+    <updated>2016-05-28T18:31:54+03:00</updated>
+    <author>
+      <name>Uğur Özyılmazel</name>
+    </author>
+    <summary type="html">&lt;p&gt;Uzaktaki git reposunda bulunan tag’leri listeleyelim.
+&lt;/p&gt;</summary>
+  </entry>
+</feed>

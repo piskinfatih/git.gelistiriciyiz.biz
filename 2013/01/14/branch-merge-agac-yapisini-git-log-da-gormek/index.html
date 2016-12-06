@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch / merge ağaç yapısını `git-log`’da görmek &mdash; Git Püf Noktaları</title>
+    <meta name="title" content="Branch / merge ağaç yapısını `git-log`’da görmek &mdash; Git Püf Noktaları">
+    <link rel="canonical" href="http://git.gelistiriciyiz.biz/2013/01/14/branch-merge-agac-yapisini-git-log-da-gormek/index.html">
+    <meta property="og:title" content="Branch / merge ağaç yapısını `git-log`’da görmek &mdash; Git Püf Noktaları"/>
+    <meta property="og:url" content="http://git.gelistiriciyiz.biz/2013/01/14/branch-merge-agac-yapisini-git-log-da-gormek/index.html"/>
+    <meta property="og:image" content="http://git.gelistiriciyiz.biz/public/images/cover.jpg"/>
+    <meta property="og:description" content="Git’de branch-merge ağaç yapısını görmek için yapmanız gereken sadece komut içinde --graph kelimesi kullanmak."/>
+    <meta name="description" content="Git’de branch-merge ağaç yapısını görmek için yapmanız gereken sadece komut içinde --graph kelimesi kullanmak."/>
+    <meta property="og:site_name" content="Git Püf Noktaları">
+    <link rel="shortcut icon" href="/public/images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/public/images/logo.png"/>
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="http://git.gelistiriciyiz.biz/feed.xml" />
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700,300,900&subset=latin,latin-ext" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="/public/css/application.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <section class="site-nav">
+        <header>
+            <nav id="navigation">
+                <a class="brand" href="/"><img alt="Logo" src="/public/images/logo.png" /></a>
+                <a href="/" class="home">Anasayfa</a>
+                <a href="http://gelistiriciyiz.biz/">GELİŞTİRİCİYİZ.BİZ</a>
+                <a href="/hakkinda/">Hakkında</a>
+                <a href="/arsiv/">Arşiv</a>
+            </nav>
+
+            <nav class="tagline hidden-xs">
+                <span>Gündelik Hayatta GIT</span>
+                <a href="http://gelistiriciyiz.biz/" class="btn btn-outline">GELİŞTİRİCİYİZ.BİZ</a>
+            </nav>
+        </header>
+    </section>
+
+        
+
+    <article>
+        <div class="container">
+            <header>
+                <div class="meta">
+                    <address><a rel="author" href="http://ugur.ozyilmazel.com" title="Uğur Özyılmazel" target="_blank">Uğur Özyılmazel</a></address> &mdash;
+                    <time pubdate datetime="2013-01-14T01:17:00+02:00" title="14 Ocak 2013, Pazartesi 01:17">14 Ocak 2013, Pazartesi 01:17</time>
+                </div>
+                <h1 class="title">Branch / merge ağaç yapısını `git-log`’da görmek</h1>
+                
+                    <div class="tags">
+                        <span class="badge"><a href="/etiket/log/">log</a></span>
+                        <span class="badge"><a href="/etiket/branch/">branch</a></span>
+                    </div>
+                
+            </header>
+            
+            <section id="article-detail">
+                <p>Git’de branch-merge ağaç yapısını görmek için yapmanız gereken sadece 
+komut içinde <code>--graph</code> kelimesi kullanmak.
+</p>
+
+<p>Son <strong>10 commit</strong>’i belirlediğim formatta <code>--graph</code> ile göster
+(<em>önceki örneklerden</em>):</p>
+<pre class="highlight shell"><code>git log -10 --pretty<span class="o">=</span>format:<span class="s1">'%Cblue%h%Creset %Cgreen%an%Creset %s (%Cred%ar%Creset)'</span> --graph
+</code></pre>
+<pre class="highlight plaintext"><code>*   c1ed18e Zachary Scott Merge pull request #1011 from sinatra/bump-rack (3 months ago)
+|\  
+| * 099de71 Zachary Scott Don't test Rack 1.4, since we won't use it. (3 months ago)
+| * 83b06c0 Zachary Scott Bump Rack to 1.5.x, but not 1.6 since it doesn't work on 1.8.7: https://travis-ci.org/sinatra/sinatra/jobs/67398284#L155 (3 months ago)
+* |   56dfd23 Zachary Scott Merge pull request #1012 from sinatra/add-ashley (3 months ago)
+|\ \  
+| * | 41cc794 Zachary Scott Add @ag_dubs to sinatra-core :clap: :tada: :confetti_ball: :tada: (3 months ago)
+| |/  
+* | 3cade28 Zachary Scott Don't test Rack 1.4, since we won't use it. (3 months ago)
+|/  
+* 18353f8 Zachary Scott Move rack master to allowed failures since 2.0.0 development begins (4 months ago)
+*   8056ae7 Zachary Scott Merge pull request #997 from sinatra/fr-multi-threaded (4 months ago)
+|\  
+| * 95d6c14 Katrina Owen Add documentation in French about multi-threading. (6 months ago)
+* |   1830563 Zachary Scott Merge pull request #994 from nico-hn/refactoring_of_compile (4 months ago)
+|\ \  
+</code></pre>
+
+<div class="full zoomable"><img src="http://41.media.tumblr.com/2d220499f7a1bef11a84b461c4bb610e/tumblr_mgl7ukFYIJ1s3r5wmo1_1280.png"></div>
+
+            </section>
+
+            <footer>
+                <address>
+                    <img class="avatar" src="http://www.gravatar.com/avatar/033485f7e18823d4ccabb24e5cb4935f" />
+                    <p>
+                        <strong><a rel="author" href="http://ugur.ozyilmazel.com" title="{{ page.author_name }}" target="_blank">Uğur Özyılmazel</a></strong><br>
+                        <span class="muted">Yazılım Geliştiricisi</span>
+                    </p>
+                </address>
+            </footer>
+            
+                <section class="index related-articles">
+        <h2 class="title">İlişkili Makaleler (20)</h2>
+    </section>
+    
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2015/11/12/mailmap-ile-commit-istatistigi/">.mailmap ile commit istatistiği &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/02/28/git-whatchanged-ile-nelerin-degistigini-bulmak/">`git-whatchanged` ile nelerin değiştiğini bulmak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/25/diff-filter-ile-silinmis-tum-dosyalari-bulmak/">`--diff-filter` ile silinmiş tüm dosyaları bulmak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/20/ilgili-revizyonda-hangi-dosyalar-degisti/">İlgili revizyonda hangi dosyalar değişti? &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/16/commitleri-sayalim/">Commit’leri sayalım &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/16/sayfalama-yapmadan-tum-logu-almak/">Sayfalama (paging) yapmadan tüm log’u almak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/16/belli-tarihler-arasindaki-loga-bakmak-slash-filtrelemek/">Belli tarihler arasındaki log’a bakmak / filtrelemek &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/14/git-log-ve-less-ile-ilgili-sorun/">`git-log` ve `less` ile ilgili sorun &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/14/git-log-ciktisini-formatlamak/">`git-log` çıktısını formatlamak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/14/author-ile-committer-arasindaki-fark/">“Author” ile “Committer” arasındaki fark? &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/13/git-config-ve-renklendirme/">`git-config` ve renklendirme &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/13/kisa-ve-oz-git-log/">Kısa ve öz `git-log` &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/12/sha1-goruntulemek-uzun/">SHA1 görüntülemek (uzun) &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/12/sha1-goruntulemek-kisa/">SHA1 görüntülemek (kısa) &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/06/git-status-kisa/">`git-status` kısa ve öz &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/06/git-notes/">`git notes` ile commit’e yorum yapmak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2015/01/12/hash-id-olmadan-checkout-yapmak/">Hash ID olmadan checkout yapmak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2014/11/16/track-edilen-branch/">Track edilen branch &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/02/18/istediginiz-revizyondan-branch-olusturmak/">İstediğiniz revizyondan `branch` oluşturmak &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles">
+        <div class="links">
+            <a rel="prefetch" title="Detaylar için tıklayın" href="/2013/01/06/daha-detayli-git-branch/">Daha detaylı `git-branch` &raquo;</a>
+        </div>
+    </section>
+    <section class="index related-articles"><hr/></section>
+
+            
+            
+            <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//gitgelistiriciyizbiz.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+        </div>
+    </article>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <nav>
+                <a href="http://gelistiriciyiz.biz/">Geliştiriciyiz.biz</a> &middot;
+                <a href="/">Anasayfa</a> &middot;
+                <a href="http://gelistiriciyiz.biz/">GELİŞTİRİCİYİZ.BİZ</a> &middot; 
+                <a href="/hakkinda/">Hakkında</a> &middot;
+                <a href="/arsiv/">Arşiv</a>
+            </nav>
+        
+            <nav class="social">
+                <a href="https://twitter.com/GiT_Tips_TR" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+                <a href="/feed.xml" title="RSS Feed"><i class="icon icon-rss black"></i></a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script src="/public/js/retina-0.0.2.js" type="text/javascript"></script>
+    <script src="/public/js/app.js" type="text/javascript"></script>
+    
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-6463685-39', 'auto');
+          ga('send', 'pageview');
+        </script>
+        <script id="dsq-count-scr" src="//gitgelistiriciyizbiz.disqus.com/count.js" async></script>
+</body>
+</html>
