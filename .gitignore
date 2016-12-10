@@ -5,3 +5,4 @@
 vendor/bundle
 creds.rb
 config_custom.yaml
+private.rake
