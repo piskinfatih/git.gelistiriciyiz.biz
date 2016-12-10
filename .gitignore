@@ -1,6 +1,7 @@
 /.bundle
 /build
 /.sass-cache
+/bin
 vendor/bundle
 creds.rb
 config_custom.yaml
